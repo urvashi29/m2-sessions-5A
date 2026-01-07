@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+
+    <style>
+      .test {
+        background-color: teal;
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body onload="setTimeout(() => {alert('Welcome')}, 4000)">
+    <h2>Welcome!</h2>
+    <p id="sample">Lorem, ipsum dolor.</p>
+
+    <button onclick="deleteEle()">Delete</button>
+
+    <div id="divEle">Hello</div>
+
+    <div class="test" id="remove">Lorem, ipsum.</div>
+
+    <button onclick="addClass()">Manipulate Class</button>
+
+    <ul id="list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+
+    <!-- <div onclick="alert('hello')">
+      Hello
+      <div onclick="alert('world')">world</div>
+    </div> -->
+
+    <!-- Event Propogation  -->
+    <div id="grandparent">
+      Grandparent
+      <div id="parent">
+        Parent
+        <div id="child">Child</div>
+      </div>
+    </div>
+
+    <input type="checkbox" id="check" />
+
+    <div id="sample" style="background-color: palevioletred">
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

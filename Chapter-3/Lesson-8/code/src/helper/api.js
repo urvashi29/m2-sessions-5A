@@ -1,0 +1,1 @@
+export const userAPI = "https://jsonplaceholder.typicode.com/users/";

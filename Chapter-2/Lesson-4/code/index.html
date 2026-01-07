@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+  </head>
+
+  <body>
+    <p id="test">hello</p>
+    <!-- <p onmouseover="alert('Hi!')">Hover!</p> -->
+    <!-- <p onmouseenter="alert('enter')" style="background-color: aqua;">Enter</p> -->
+    <!-- <p onmouseleave="alert('leave')" style="background-color: orange;">Leave</p> -->
+    <button onclick="changeBackground()">Change</button>
+
+    <form onsubmit="alert('form is submitted!')">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        placeholder="Please enter name"
+        id="name"
+        onfocus="changeStyle()"
+      />
+
+      <input onkeyup="alert('onkeyup')" placeholder="please enter age" />
+      <input onkeydown="alert('onkeyup')" placeholder="please enter contact" />
+      <input
+        onkeypress="alert('onkeypress')"
+        placeholder="please enter last name"
+      />
+
+      <input
+        value=""
+        onchange="captureUserInput()"
+        placeholder="please enter hobbies"
+        id="hobby"
+      />
+      <button>Submit</button>
+    </form>
+
+    <form>
+      <label for="email">Enter Email</label>
+      <input
+        type="email"
+        placeholder="Please enter email"
+        id="email"
+        name="email"
+      />
+
+      <label fpr="pwd">Enter Password</label>
+      <input
+        type="password"
+        placeholder="Please enter Password"
+        id="pwd"
+        name="pwd"
+      />
+
+      <button type="button" onclick="validate()">Submit</button>
+    </form>
+
+    <p id="display"></p>
+
+    <h2>Change cart</h2>
+    <p id="cart-num">0</p>
+    <button id="btn">Add To Cart</button>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
